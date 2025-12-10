@@ -1,0 +1,40 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssZXingLibDemo.RestRecords;
+
+// SpaceRecord
+public class RESTRC_9589ecc0629788c2aca6b47bcbae782c : AbstractRESTStructure<RC_9589ecc0629788c2aca6b47bcbae782c> {
+[JsonProperty("Space")]
+public ssZXingLibDemo.RestRecords.RESTEN_bc915b2fa9297a72fb4d1b227ebe2573EntityRecord AttrSpace;
+
+public RESTRC_9589ecc0629788c2aca6b47bcbae782c() { }
+
+public RESTRC_9589ecc0629788c2aca6b47bcbae782c (RC_9589ecc0629788c2aca6b47bcbae782c s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrSpace = ConvertToRestWithoutDefaults(s.ssENSpace, new EN_bc915b2fa9297a72fb4d1b227ebe2573EntityRecord(), ssZXingLibDemo.RestRecords.RESTEN_bc915b2fa9297a72fb4d1b227ebe2573EntityRecord.FromStructureDelegate(config));
+  } else {
+AttrSpace = ssZXingLibDemo.RestRecords.RESTEN_bc915b2fa9297a72fb4d1b227ebe2573EntityRecord.FromStructure(s.ssENSpace, config);
+  }
+}
+
+public static RC_9589ecc0629788c2aca6b47bcbae782c ToStructure(ssZXingLibDemo.RestRecords.RESTRC_9589ecc0629788c2aca6b47bcbae782c obj) { 
+  RC_9589ecc0629788c2aca6b47bcbae782c s = new RC_9589ecc0629788c2aca6b47bcbae782c();
+  if(obj != null) {
+  s.ssENSpace = ssZXingLibDemo.RestRecords.RESTEN_bc915b2fa9297a72fb4d1b227ebe2573EntityRecord.ToStructure(obj.AttrSpace);
+  }
+  return s;
+}
+
+public static Func<RC_9589ecc0629788c2aca6b47bcbae782c, ssZXingLibDemo.RestRecords.RESTRC_9589ecc0629788c2aca6b47bcbae782c> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_9589ecc0629788c2aca6b47bcbae782c s) => FromStructure(s, config);
+}
+public static ssZXingLibDemo.RestRecords.RESTRC_9589ecc0629788c2aca6b47bcbae782c FromStructure(RC_9589ecc0629788c2aca6b47bcbae782c s, IBehaviorsConfiguration config) { 
+  return new ssZXingLibDemo.RestRecords.RESTRC_9589ecc0629788c2aca6b47bcbae782c(s, config);
+}
+
+}
+
+

@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssOutSystemsMaps.ScreenServices;
+
+public class RESTOutSystemsMaps_SearchPlaces_SearchPlaces_ActionGetSearchPlacesErrorBySearchPlacesErrorCode_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("SearchPlacesErrorCode")]
+public string inParamSearchPlacesErrorCode;
+
+
+    public static RESTOutSystemsMaps_SearchPlaces_SearchPlaces_ActionGetSearchPlacesErrorBySearchPlacesErrorCode_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTOutSystemsMaps_SearchPlaces_SearchPlaces_ActionGetSearchPlacesErrorBySearchPlacesErrorCode_Inputs result = inputParameters.ToObject<RESTOutSystemsMaps_SearchPlaces_SearchPlaces_ActionGetSearchPlacesErrorBySearchPlacesErrorCode_Inputs>(settings);
+return result;
+}
+
+
+    public OutSystemsMaps_SearchPlaces_SearchPlaces_ActionGetSearchPlacesErrorBySearchPlacesErrorCode_Model ToModel() {OutSystemsMaps_SearchPlaces_SearchPlaces_ActionGetSearchPlacesErrorBySearchPlacesErrorCode_Model result = new OutSystemsMaps_SearchPlaces_SearchPlaces_ActionGetSearchPlacesErrorBySearchPlacesErrorCode_Model();
+result.inParamSearchPlacesErrorCode = inParamSearchPlacesErrorCode == null ? "" : inParamSearchPlacesErrorCode;
+return result;
+}
+
+}

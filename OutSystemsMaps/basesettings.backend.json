@@ -1,0 +1,71 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Warning",
+      "System.Net.Http.HttpClient.DefaultClientWithRetries.*": "Warning",
+      "System.Net.Http.HttpClient.*.ClientHandler": "Warning",
+      "OutSystems.Log.Visits": "None",
+      "OutSystems.RuntimeCommon.OSTrace": "Information"
+    },
+    "Console": {
+      "LogLevel": {
+        "Default": "Error",
+        "Microsoft": "Error",
+        "Microsoft.Hosting.Lifetime": "Error",
+        "OutSystems.RuntimeCommon.OSTrace": "Error"
+      },
+      "System.Net.Http.HttpClient.DefaultClientWithRetries.*": "Warning",
+      "System.Net.Http.HttpClient.*.ClientHandler": "Warning"
+    },
+    "EventLog": {
+      "LogLevel": {
+        "Default": "Error",
+        "OutSystems.RuntimeCommon.OSTrace": "None",
+        "OutSystems.RuntimeCommon.Log.EventLogger": "Information",
+        "Microsoft*": "Warning"
+      }
+    }
+  },
+  "OutSystems": {
+    "Application": {
+      "Key": "95bb31d1-f079-4fd6-ab2e-5c8326855aaa",
+      "Name": "OutSystems Maps",
+      "RevisionId": "45",
+      "UrlBasePath": "OutSystemsMaps",
+      "Description": "OutSystems Maps is a component that allows you to add maps to your applications with single or multiple locations. It\u0027s fully customizable and adaptable, allowing you to change map behaviors, customize your map, add markers and customize each of them, according to your use case.\nVersion 2.1.0\n",
+      "PrimaryColor": "#cc2200",
+      "Hubs": {
+        "DebuggerRequestsHub": "True",
+        "DebuggerEventsHub": "False"
+      },
+      "Controllers": {
+        "DebuggerApiController": "False",
+        "DataPreviewController": "False",
+        "PwaApiController": "False"
+      },
+      "Workload": {
+        "Type": "app"
+      },
+      "Services": {
+        "RestConsumeService": "True"
+      }
+    },
+    "Module": {
+      "CompilationHash": "GRuIIg82NzAU6uEt9VH1CQ"
+    },
+    "RESTService": {
+      "Assemblies": "OutSystemsMaps"
+    },
+    "BuildJob": {
+      "Version": "v44.8.5.0"
+    },
+    "BackendWorker": {
+      "Version": "v18.316.4"
+    },
+    "HubEdition": {
+      "NoMARSSupport": "True"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Warning",
+      "System.Net.Http.HttpClient.DefaultClientWithRetries.*": "Warning",
+      "System.Net.Http.HttpClient.*.ClientHandler": "Warning",
+      "OutSystems.Log.Visits": "None",
+      "OutSystems.RuntimeCommon.OSTrace": "Information"
+    },
+    "Console": {
+      "LogLevel": {
+        "Default": "Error",
+        "Microsoft": "Error",
+        "Microsoft.Hosting.Lifetime": "Error",
+        "OutSystems.RuntimeCommon.OSTrace": "Error"
+      },
+      "System.Net.Http.HttpClient.DefaultClientWithRetries.*": "Warning",
+      "System.Net.Http.HttpClient.*.ClientHandler": "Warning"
+    },
+    "EventLog": {
+      "LogLevel": {
+        "Default": "Error",
+        "OutSystems.RuntimeCommon.OSTrace": "None",
+        "OutSystems.RuntimeCommon.Log.EventLogger": "Information",
+        "Microsoft*": "Warning"
+      }
+    }
+  },
+  "OutSystems": {
+    "Application": {
+      "Key": "8be17f2a-431c-4958-b894-c77b988a7271",
+      "Name": "OutSystems UI",
+      "RevisionId": "56",
+      "UrlBasePath": "OutSystemsUI",
+      "Description": "The OutSystems UI framework for Web and Mobile apps with dozens of responsive UI patterns on top of a solid design system, fully customizable to your Style Guide needs.  \nVersion 2.24.0",
+      "PrimaryColor": "#cc2200",
+      "Hubs": {
+        "DebuggerRequestsHub": "True",
+        "DebuggerEventsHub": "False"
+      },
+      "Controllers": {
+        "DebuggerApiController": "False",
+        "DataPreviewController": "False",
+        "PwaApiController": "False"
+      },
+      "Workload": {
+        "Type": "app"
+      },
+      "Services": {
+        "RestConsumeService": "True"
+      }
+    },
+    "Module": {
+      "CompilationHash": "NSIwsWBUmb3XCk1eBtDSPQ"
+    },
+    "RESTService": {
+      "Assemblies": "OutSystemsUI"
+    },
+    "BuildJob": {
+      "Version": "v44.8.5.0"
+    },
+    "BackendWorker": {
+      "Version": "v18.316.4"
+    },
+    "HubEdition": {
+      "NoMARSSupport": "True"
+    }
+  }
+}

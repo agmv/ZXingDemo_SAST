@@ -1,0 +1,16 @@
+﻿{
+  "OutSystems": {
+    "Application": {
+      "ManifestVersionToken": "$ESPACE_VERSION_TOKEN_PLACEHOLDER$",
+      "StaticFiles": {
+        "NoCacheList": "index.html"
+      }
+    },
+    "FrontendWorker": {
+      "Version": "v18.445.0"
+    },
+    "ClientRuntime": {
+      "Version": "6.50.21"
+    }
+  }
+}

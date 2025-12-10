@@ -1,0 +1,307 @@
+﻿using System.Diagnostics;
+namespace ssZXingLibDemo.ReferencesProxy {
+
+/// <summary>
+/// [ReferenceEntity] Zoom (dcxcmoHzG0+RN5mOV3SrFw)
+///  <code>EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord</code> that represents <code>Zoom</code
+/// > <p>Description: Set the level of zoom to be added to the map.</p>
+/// </summary>
+[OutSystems.HubEdition.RuntimePlatform.MetaInformation.EntityRecordDetails("Zoom","fPCs5IqzcUinwkAX6qvpXA","0TG7lXnw1k+rLlyDJoVaqg", 0,"", null, false)]
+// Name: Zoom
+public partial struct EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord : ITypedRecord<EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord> {
+internal static readonly GlobalObjectKey IdId = GlobalObjectKey.Parse("0TG7lXnw1k+rLlyDJoVaqg*lIt1UOoNCEirguJagFtkgQ");
+internal static readonly GlobalObjectKey IdLabel = GlobalObjectKey.Parse("0TG7lXnw1k+rLlyDJoVaqg*NaISv1XqkkOaI470T0uT8A");
+internal static readonly GlobalObjectKey IdZoom = GlobalObjectKey.Parse("0TG7lXnw1k+rLlyDJoVaqg*hZ6k4N4e_UKKCoXn8InoFA");
+
+[OutSystems.HubEdition.RuntimePlatform.MetaInformation.EntityAttributeDetails("ID",0,false,true,false,true)]
+[System.Xml.Serialization.XmlElement("Id")]
+private int _ssId;
+public int ssId{
+  get{
+      return _ssId;
+  }
+  set{
+      if((_ssId!=value) || OptimizedAttributes[0]){
+          ChangedAttributes = new BitArray(3,true);
+          _ssId = value;
+      }
+  }
+}
+
+[OutSystems.HubEdition.RuntimePlatform.MetaInformation.EntityAttributeDetails("LABEL",50,false,false,false,false)]
+[System.Xml.Serialization.XmlElement("Label")]
+private string _ssLabel;
+public string ssLabel{
+  get{
+      return _ssLabel;
+  }
+  set{
+      if((_ssLabel!=value) || OptimizedAttributes[1]){
+          ChangedAttributes[1] = true;
+          _ssLabel = value;
+      }
+  }
+}
+
+[OutSystems.HubEdition.RuntimePlatform.MetaInformation.EntityAttributeDetails("ZOOM",0,false,false,false,true)]
+[System.Xml.Serialization.XmlElement("Zoom")]
+private int _ssZoom;
+public int ssZoom{
+  get{
+      return _ssZoom;
+  }
+  set{
+      if((_ssZoom!=value) || OptimizedAttributes[2]){
+          ChangedAttributes[2] = true;
+          _ssZoom = value;
+      }
+  }
+}
+
+
+public BitArray ChangedAttributes;
+
+public BitArray OptimizedAttributes;
+
+public EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord() {
+ChangedAttributes = new BitArray(3,true);
+OptimizedAttributes = new BitArray(3,false);
+_ssId = 0;
+_ssLabel = "";
+_ssZoom = 0;
+}
+
+public BitArray[] GetDefaultOptimizedValues(){
+    BitArray[] all = new BitArray[0];
+    return all;
+}
+
+public BitArray[] AllOptimizedAttributes{
+set{
+    if(value == null){
+    }else{
+    }
+}
+get{
+    BitArray[] all = new BitArray[0];
+    return all;
+}
+}
+
+/// <summary>
+/// Read a record from database
+/// </summary>
+/// <param name="r"> Data base reader</param>
+/// <param name="index"> index</param>
+public void Read( DbDataReader r, ref int index) {
+ssId = r.ReadInteger(index++, "Zoom.Id", 0);
+ssLabel = r.ReadText(index++, "Zoom.Label", "");
+ssZoom = r.ReadInteger(index++, "Zoom.Zoom", 0);
+ChangedAttributes = new BitArray(3,false);
+OptimizedAttributes = new BitArray(3,false);
+}
+/// <summary>
+/// Read from database
+/// </summary>
+/// <param name="r"> Data reader</param>
+public void ReadDB( DbDataReader r) {
+int index = 0;
+Read(r, ref index);
+}
+
+/// <summary>
+/// Read from record
+/// </summary>
+/// <param name="r"> Record</param>
+public void ReadIM(EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord r) {
+this = r;
+}
+
+
+public static bool operator == (EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord a, EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord b) {
+if (a.ssId != b.ssId) return false;
+if (a.ssLabel != b.ssLabel) return false;
+if (a.ssZoom != b.ssZoom) return false;
+return true;
+}
+
+public static bool operator != (EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord a, EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord b) {
+return !(a==b);
+}
+
+public override bool Equals(object o) {
+if (o.GetType() != typeof (EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord)) return false;
+return (this == (EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord)o);
+}
+
+public override int GetHashCode() {
+try {
+return base.GetHashCode()
+ ^ ssId.GetHashCode()
+ ^ ssLabel.GetHashCode()
+ ^ ssZoom.GetHashCode()
+;
+} catch {
+return base.GetHashCode();
+}
+}
+
+public void RecursiveReset() {
+}
+
+public void InternalRecursiveSave() {
+}
+
+
+public EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord Duplicate() {
+EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord t;
+t._ssId = this._ssId;
+t._ssLabel = this._ssLabel;
+t._ssZoom = this._ssZoom;
+t.ChangedAttributes = new BitArray(3);
+t.OptimizedAttributes = new BitArray(3);
+for(int i = 0; i < 3; i++){
+  t.ChangedAttributes[i] = ChangedAttributes[i];
+  t.OptimizedAttributes[i] = OptimizedAttributes[i];
+}
+return t;
+}
+
+IRecord IRecord.Duplicate() {
+return Duplicate();
+}
+
+public void ToXml(Object parent, System.Xml.XmlElement baseElem, String fieldName, int detailLevel) {
+throw new System.InvalidOperationException();
+}
+
+public void EvaluateFields(VarValue variable, Object parent, String baseName, String fields) {
+String head = VarValue.GetHead(fields);
+String tail = VarValue.GetTail(fields);
+variable.Found = false;
+if (head == "id") {
+if (!VarValue.FieldIsOptimized(parent, baseName + ".Id")) variable.Value = ssId; else variable.Optimized = true;
+} else if (head == "label") {
+if (!VarValue.FieldIsOptimized(parent, baseName + ".Label")) variable.Value = ssLabel; else variable.Optimized = true;
+} else if (head == "zoom") {
+if (!VarValue.FieldIsOptimized(parent, baseName + ".Zoom")) variable.Value = ssZoom; else variable.Optimized = true;
+}
+if (variable.Found && tail != null) variable.EvaluateFields(this, head, tail);
+}
+
+public bool ChangedAttributeGet(GlobalObjectKey key) {
+if (key.Equals(IdId)) {
+return ChangedAttributes[0];
+}
+if (key.Equals(IdLabel)) {
+return ChangedAttributes[1];
+}
+if (key.Equals(IdZoom)) {
+return ChangedAttributes[2];
+}
+throw new System.InvalidOperationException();
+}
+
+public bool OptimizedAttributeGet(GlobalObjectKey key) {
+if (key.Equals(IdId)) {
+return OptimizedAttributes[0];
+}
+if (key.Equals(IdLabel)) {
+return OptimizedAttributes[1];
+}
+if (key.Equals(IdZoom)) {
+return OptimizedAttributes[2];
+}
+throw new System.InvalidOperationException();
+}
+
+public object AttributeGet(GlobalObjectKey key) {
+if (key == IdId) {
+return ssId;
+}
+if (key == IdLabel) {
+return ssLabel;
+}
+if (key == IdZoom) {
+return ssZoom;
+}
+throw new Exception("Invalid key");
+}
+public object GetAttribute(Guid attributeKey) {
+if (attributeKey == IdId.Key.AsGuid) {
+return ssId;
+}
+if (attributeKey == IdLabel.Key.AsGuid) {
+return ssLabel;
+}
+if (attributeKey == IdZoom.Key.AsGuid) {
+return ssZoom;
+}
+throw new Exception("Invalid key");
+}
+public void FillFromOther(IRecord other) {
+ChangedAttributes = new BitArray(3);
+OptimizedAttributes = new BitArray(3);
+if (other == null) return;
+ssId = (int) other.AttributeGet(IdId);
+ChangedAttributes[0] = other.ChangedAttributeGet(IdId);
+OptimizedAttributes[0] = other.OptimizedAttributeGet(IdId);
+ssLabel = (string) other.AttributeGet(IdLabel);
+ChangedAttributes[1] = other.ChangedAttributeGet(IdLabel);
+OptimizedAttributes[1] = other.OptimizedAttributeGet(IdLabel);
+ssZoom = (int) other.AttributeGet(IdZoom);
+ChangedAttributes[2] = other.ChangedAttributeGet(IdZoom);
+OptimizedAttributes[2] = other.OptimizedAttributeGet(IdZoom);
+}
+} // EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord
+
+/// <summary>
+/// RecordList type <code>ZoomList</code> that represents a record list of <code>Zoom</code>
+/// </summary>
+public partial class RL_34e3285764324083bc72bd04bd7ad877 : GenericRecordList<EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord>, IEnumerable, IEnumerator {
+
+protected override EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord GetElementDefaultValue() {
+return new EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord();
+}
+
+public T[] ToArray<T>(Func<EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord, T> converter) {
+  return ToArray(this, converter);
+}
+
+public static T[] ToArray<T>(RL_34e3285764324083bc72bd04bd7ad877 recordList, Func<EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord, T> converter) {
+  return InnerToArray(recordList, converter);
+}
+public static implicit operator RL_34e3285764324083bc72bd04bd7ad877(EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord[] array) {
+  RL_34e3285764324083bc72bd04bd7ad877 result = new RL_34e3285764324083bc72bd04bd7ad877();
+result.InnerFromArray(array);
+    return result;
+}
+
+public static RL_34e3285764324083bc72bd04bd7ad877 ToList<T>(T[] array, Func <T, EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord> converter) {
+  RL_34e3285764324083bc72bd04bd7ad877 result = new RL_34e3285764324083bc72bd04bd7ad877();
+  result.InnerFromArray(array, converter);
+  return result;
+}
+
+public static RL_34e3285764324083bc72bd04bd7ad877 FromRestList<T>(RestList<T> restList, Func <T, EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord> converter) {
+  RL_34e3285764324083bc72bd04bd7ad877 result = new RL_34e3285764324083bc72bd04bd7ad877();
+  result.InnerFromRestList(restList, converter);
+  return result;
+}
+public RL_34e3285764324083bc72bd04bd7ad877() : base() {
+}
+public override BitArray[] GetDefaultOptimizedValues(){
+BitArray[] def = new BitArray[0];
+return def;
+}
+/// <summary>
+/// Create as new list
+/// </summary>
+/// <returns>The new record list</returns>
+protected override OSList<EN_480235a969b3f42eac91ad5813fe9bf9EntityRecord> NewList() {
+return new RL_34e3285764324083bc72bd04bd7ad877();
+}
+
+
+} // RL_34e3285764324083bc72bd04bd7ad877
+}

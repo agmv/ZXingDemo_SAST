@@ -1,0 +1,46 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssOutSystemsMaps.RestRecords;
+
+// Offset
+public class RESTST_be62cc31fbe4705834275960beeb55e2Structure : AbstractRESTStructure<ST_be62cc31fbe4705834275960beeb55e2Structure> {
+[JsonProperty("OffsetX")]
+public int? AttrOffsetX;
+
+[JsonProperty("OffsetY")]
+public int? AttrOffsetY;
+
+public RESTST_be62cc31fbe4705834275960beeb55e2Structure() { }
+
+public RESTST_be62cc31fbe4705834275960beeb55e2Structure (ST_be62cc31fbe4705834275960beeb55e2Structure s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrOffsetX = ConvertToRestWithoutDefaults(s.ssOffsetX, 0);
+AttrOffsetY = ConvertToRestWithoutDefaults(s.ssOffsetY, 0);
+  } else {
+AttrOffsetX = (int?) s.ssOffsetX;
+AttrOffsetY = (int?) s.ssOffsetY;
+  }
+}
+
+public static ST_be62cc31fbe4705834275960beeb55e2Structure ToStructure(ssOutSystemsMaps.RestRecords.RESTST_be62cc31fbe4705834275960beeb55e2Structure obj) { 
+  ST_be62cc31fbe4705834275960beeb55e2Structure s = new ST_be62cc31fbe4705834275960beeb55e2Structure();
+  if(obj != null) {
+  s.ssOffsetX = obj.AttrOffsetX == null ? 0 : obj.AttrOffsetX.Value;
+  s.ssOffsetY = obj.AttrOffsetY == null ? 0 : obj.AttrOffsetY.Value;
+  }
+  return s;
+}
+
+public static Func<ST_be62cc31fbe4705834275960beeb55e2Structure, ssOutSystemsMaps.RestRecords.RESTST_be62cc31fbe4705834275960beeb55e2Structure> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ST_be62cc31fbe4705834275960beeb55e2Structure s) => FromStructure(s, config);
+}
+public static ssOutSystemsMaps.RestRecords.RESTST_be62cc31fbe4705834275960beeb55e2Structure FromStructure(ST_be62cc31fbe4705834275960beeb55e2Structure s, IBehaviorsConfiguration config) { 
+  return new ssOutSystemsMaps.RestRecords.RESTST_be62cc31fbe4705834275960beeb55e2Structure(s, config);
+}
+
+}
+
+

@@ -1,0 +1,56 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZXingLibDemo", "ZXingLibDemo/ZXingLibDemo.csproj", "{727df5cc-3df4-489e-80bd-86f8ed58ce4b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutSystemsUI", "OutSystemsUI/OutSystemsUI.csproj", "{60a8a846-8fd0-4024-bcf0-0f6de581338a}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutSystemsMaps", "OutSystemsMaps/OutSystemsMaps.csproj", "{74c23e10-6e4d-4e4c-b8e4-90e4874dcbbc}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZXingLibDemoReferencesProxy", "ZXingLibDemo/referencesProxy/ZXingLibDemoReferencesProxy.csproj", "{b738a16a-d757-46a3-b332-46f32f5cd110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZXingLibDemoRecords", "ZXingLibDemo/Records/ZXingLibDemoRecords.csproj", "{df5c0c6b-fb71-4516-89ee-d49744695779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutSystemsUIRecords", "OutSystemsUI/Records/OutSystemsUIRecords.csproj", "{2002d176-e359-437f-b4ed-1331e09301ae}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutSystemsMapsRecords", "OutSystemsMaps/Records/OutSystemsMapsRecords.csproj", "{423fed3c-4f58-4ef5-b624-5bbec8e7eeac}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{727df5cc-3df4-489e-80bd-86f8ed58ce4b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{727df5cc-3df4-489e-80bd-86f8ed58ce4b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{727df5cc-3df4-489e-80bd-86f8ed58ce4b}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{727df5cc-3df4-489e-80bd-86f8ed58ce4b}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60a8a846-8fd0-4024-bcf0-0f6de581338a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60a8a846-8fd0-4024-bcf0-0f6de581338a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60a8a846-8fd0-4024-bcf0-0f6de581338a}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60a8a846-8fd0-4024-bcf0-0f6de581338a}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74c23e10-6e4d-4e4c-b8e4-90e4874dcbbc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74c23e10-6e4d-4e4c-b8e4-90e4874dcbbc}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74c23e10-6e4d-4e4c-b8e4-90e4874dcbbc}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74c23e10-6e4d-4e4c-b8e4-90e4874dcbbc}.Release|Any CPU.Build.0 = Release|Any CPU
+		{b738a16a-d757-46a3-b332-46f32f5cd110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b738a16a-d757-46a3-b332-46f32f5cd110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b738a16a-d757-46a3-b332-46f32f5cd110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{b738a16a-d757-46a3-b332-46f32f5cd110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{df5c0c6b-fb71-4516-89ee-d49744695779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{df5c0c6b-fb71-4516-89ee-d49744695779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{df5c0c6b-fb71-4516-89ee-d49744695779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{df5c0c6b-fb71-4516-89ee-d49744695779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2002d176-e359-437f-b4ed-1331e09301ae}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2002d176-e359-437f-b4ed-1331e09301ae}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2002d176-e359-437f-b4ed-1331e09301ae}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2002d176-e359-437f-b4ed-1331e09301ae}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423fed3c-4f58-4ef5-b624-5bbec8e7eeac}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423fed3c-4f58-4ef5-b624-5bbec8e7eeac}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423fed3c-4f58-4ef5-b624-5bbec8e7eeac}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423fed3c-4f58-4ef5-b624-5bbec8e7eeac}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Warning",
+      "System.Net.Http.HttpClient.DefaultClientWithRetries.*": "Warning",
+      "System.Net.Http.HttpClient.*.ClientHandler": "Warning",
+      "OutSystems.Log.Visits": "None",
+      "OutSystems.RuntimeCommon.OSTrace": "Information"
+    },
+    "Console": {
+      "LogLevel": {
+        "Default": "Error",
+        "Microsoft": "Error",
+        "Microsoft.Hosting.Lifetime": "Error",
+        "OutSystems.RuntimeCommon.OSTrace": "Error"
+      },
+      "System.Net.Http.HttpClient.DefaultClientWithRetries.*": "Warning",
+      "System.Net.Http.HttpClient.*.ClientHandler": "Warning"
+    },
+    "EventLog": {
+      "LogLevel": {
+        "Default": "Error",
+        "OutSystems.RuntimeCommon.OSTrace": "None",
+        "OutSystems.RuntimeCommon.Log.EventLogger": "Information",
+        "Microsoft*": "Warning"
+      }
+    }
+  },
+  "OutSystems": {
+    "Application": {
+      "Key": "61918b7a-e496-4b63-992b-b83299b21e43",
+      "Name": "ZXingLib Demo",
+      "RevisionId": "63",
+      "UrlBasePath": "ZXingLibDemo",
+      "Description": "",
+      "PrimaryColor": "#000000",
+      "Hubs": {
+        "DebuggerRequestsHub": "True",
+        "DebuggerEventsHub": "False"
+      },
+      "Controllers": {
+        "DebuggerApiController": "False",
+        "DataPreviewController": "False",
+        "PwaApiController": "False"
+      },
+      "Workload": {
+        "Type": "app"
+      },
+      "Services": {
+        "RestConsumeService": "True"
+      }
+    },
+    "Module": {
+      "CompilationHash": "HwmLrlRp0RGll\u002BIsj0DDKA"
+    },
+    "RESTService": {
+      "Assemblies": "ZXingLibDemo"
+    },
+    "BuildJob": {
+      "Version": "v44.8.5.0"
+    },
+    "BackendWorker": {
+      "Version": "v18.316.4"
+    },
+    "HubEdition": {
+      "NoMARSSupport": "True"
+    }
+  }
+}
